@@ -8,19 +8,14 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 There should be whitespace between paragraphs.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project. 
 
-# Header 1
+# About me
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Experienced cybersecurity enthusiast with a strong foundation in network security, incident response, and vulnerability management whose journey in computer science has led me to develop a passion for cybersecurity, and I am now agar to start my professional cybersecurity career, specifically aiming to join pursue my long term goal to being a pen tester.
 
-## Header 2
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
+### Skills
 
 ```js
 // Javascript code with syntax highlighting.
