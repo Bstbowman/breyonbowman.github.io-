@@ -355,12 +355,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 ## Certifications
 <div>
-<a href="https://coursera.org/share/bc6afea8abfe7bdd0f1dcda62a987cef"><img src="https://img.shields.io/badge/-Google_Security-FF0000?&style=for-the-badge&logo=Google&logoColor=white" /></a>
-<img src="https://img.shields.io/badge/-Security%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
-<img src="https://img.shields.io/badge/-Network%2B-007ACC?&style=for-the-badge&logo=CompTIA&logoColor=white" />
-<img src="https://img.shields.io/badge/-A%2B-4D4D4D?&style=for-the-badge&logo=CompTIA&logoColor=white" />
-<img src="https://img.shields.io/badge/-CDSA-006400?&style=for-the-badge&logoColor=white" />
-<img src="https://img.shields.io/badge/-CCD-000080?&style=for-the-badge&logoColor=white" />
+<span class="certification-link"><a href="https://coursera.org/share/bc6afea8abfe7bdd0f1dcda62a987cef"><img src="https://img.shields.io/badge/-Google_Security-FF0000?&style=for-the-badge&logo=Google&logoColor=white" /></a></span>
+<span class="certification-link"><img src="https://img.shields.io/badge/-Security%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" /></span>
+<span class="certification-link"><img src="https://img.shields.io/badge/-Network%2B-007ACC?&style=for-the-badge&logo=CompTIA&logoColor=white" /></span>
+<span class="certification-link"><img src="https://img.shields.io/badge/-A%2B-4D4D4D?&style=for-the-badge&logo=CompTIA&logoColor=white" /></span>
+<span class="certification-link"><img src="https://img.shields.io/badge/-CDSA-006400?&style=for-the-badge&logoColor=white" /></span>
+<span class="certification-link"><img src="https://img.shields.io/badge/-CCD-000080?&style=for-the-badge&logoColor=white" /></span>
 </div>
 
 ### Small image
