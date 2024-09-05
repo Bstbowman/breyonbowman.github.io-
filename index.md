@@ -2,13 +2,13 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+
 
 <a href="https://www.linkedin.com/in/breyon-bowman-729391237/" style="display: inline-block; background-color: #4682B4; color: white; text-decoration: none; padding: 10px 20px; border-radius: 25px; font-weight: bold;">LinkedIn Profile</a>
 
-There should be whitespace between paragraphs.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project. 
+
+
 
 # About me
 
@@ -139,7 +139,6 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
     </div>
   </div>
 </div>
-
 
 #### Header 4
 
