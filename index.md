@@ -36,7 +36,7 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
   color: white;
   padding: 10px;
   border-radius: 20px;
-  margin: 5px;
+  margin: 10px;  /* Increased from 5px to 10px */
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -70,6 +70,7 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;  /* Added gap property to increase spacing between bubbles */
 }
 
 .project-bubble:nth-child(odd) {
@@ -130,7 +131,6 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
 </div>
 
 </details>
-
 #### Header 4
 
 *   This is an unordered list following a header.
