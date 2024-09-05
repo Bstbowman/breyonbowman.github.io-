@@ -140,60 +140,228 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
   </div>
 </div>
 
-#### Header 4
+<h2 style="text-align: center;">Skills and Tools</h2>
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+<div style="text-align: center; margin: 20px 0;">
+  <p>Proficiency indicator</p>
+  <div id="proficiency-gauge" style="background: linear-gradient(to right, #ff0000, #ffff00, #00ff00); width: 200px; height: 20px; position: relative; margin: 0 auto;">
+    <div id="moving-line" style="position: absolute; left: 0; width: 2px; height: 100%; background-color: white; cursor: pointer;"></div>
+  </div>
+</div>
 
-##### Header 5
+<style>
+@keyframes moveLineBackAndForth {
+  0% { left: 0; }
+  50% { left: calc(100% - 2px); }
+  100% { left: 0; }
+}
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+#moving-line {
+  animation: moveLineBackAndForth 6s linear infinite;
+}
 
-###### Header 6
+#moving-line:hover {
+  animation-play-state: paused;
+}
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+.category-title {
+  transition: font-size 0.3s ease;
+}
 
-### There's a horizontal rule below this.
+.category-title:hover {
+  font-size: 200%;
+}
 
-* * *
+.category-content {
+  transition: margin-top 0.3s ease;
+}
 
-### Here is an unordered list:
+.tool-link {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+.tool-link:hover {
+  transform: scale(1.2) translateX(10%);
+}
 
-### And an ordered list:
+.tool-gauge {
+  transition: transform 0.3s ease;
+}
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+.tool-gauge:hover {
+  transform: scale(1.2) translateX(10%);
+}
 
-### And a nested list:
+.tools-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+.network-section {
+  flex: 1;
+  max-width: 45%;
+}
+
+.endpoint-section {
+  flex: 1;
+  max-width: 45%;
+}
+
+.siem-section {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  const gauge = document.getElementById('proficiency-gauge');
+  const line = document.getElementById('moving-line');
+  let isDragging = false;
+
+  gauge.addEventListener('mousedown', (e) => {
+    updateLinePosition(e);
+    e.preventDefault();
+  });
+
+  line.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    updateLinePosition(e);
+    e.preventDefault();
+    e.stopPropagation();
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+      updateLinePosition(e);
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    if (isDragging) {
+      isDragging = false;
+      line.style.animation = 'moveLineBackAndForth 6s linear infinite';
+    }
+  });
+
+  function updateLinePosition(e) {
+    const rect = gauge.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    x = Math.max(0, Math.min(x, rect.width - 2));
+    line.style.left = `${x}px`;
+    line.style.animation = 'none';
+  }
+
+  const categoryTitles = document.querySelectorAll('.category-title');
+  categoryTitles.forEach(title => {
+    title.addEventListener('mouseenter', () => {
+      const content = title.nextElementSibling;
+      content.style.marginTop = '20px';
+    });
+    title.addEventListener('mouseleave', () => {
+      const content = title.nextElementSibling;
+      content.style.marginTop = '0';
+    });
+  });
+});
+</script>
+
+<div class="tools-container">
+  <div class="network-section">
+    <h3 class="category-title">Network</h3>
+    <div class="category-content">
+       <div class="tool-link">
+         <a href="https://www.wireshark.org"><img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" /></a>
+       </div>
+       <div class="tool-gauge" style="margin-top: 5px; margin-bottom: 10px;">
+         <div style="background: linear-gradient(to right, #ff0000, #ffff00, #00ff00); width: 100px; height: 10px; position: relative;">
+           <div style="position: absolute; left: 70%; width: 2px; height: 100%; background-color: white;"></div>
+         </div>
+       </div>
+       <div class="tool-link">
+         <a href="https://suricata.io"><img src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" /></a>
+       </div>
+       <div class="tool-gauge" style="margin-top: 5px; margin-bottom: 10px;">
+         <div style="background: linear-gradient(to right, #ff0000, #ffff00, #00ff00); width: 100px; height: 10px; position: relative;">
+           <div style="position: absolute; left: 20%; width: 2px; height: 100%; background-color: white;"></div>
+         </div>
+       </div>
+       <div class="tool-link">
+         <a href="https://zeek.org"><img src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" /></a>
+       </div>
+       <div class="tool-gauge" style="margin-top: 5px; margin-bottom: 10px;">
+         <div style="background: linear-gradient(to right, #ff0000, #ffff00, #00ff00); width: 100px; height: 10px; position: relative;">
+           <div style="position: absolute; left: 20%; width: 2px; height: 100%; background-color: white;"></div>
+         </div>
+       </div>
+    </div>
+  </div>
+
+  <div class="endpoint-section">
+    <h3 class="category-title">Endpoint</h3>
+    <div class="category-content">
+       <div class="tool-link">
+         <a href="https://www.microsoft.com/en-us/security/business/threat-protection/microsoft-defender-endpoint"><img src="https://img.shields.io/badge/-Microsoft_Defender_for_Endpoint-00A4EF?&style=for-the-badge&logo=Microsoft&logoColor=white" /></a>
+       </div>
+       <div class="tool-gauge" style="margin-top: 5px; margin-bottom: 10px;">
+         <div style="background: linear-gradient(to right, #ff0000, #ffff00, #00ff00); width: 100px; height: 10px; position: relative;">
+           <div style="position: absolute; left: 20%; width: 2px; height: 100%; background-color: white;"></div>
+         </div>
+       </div>
+       <div class="tool-link">
+         <a href="https://velociraptor.app"><img src="https://img.shields.io/badge/-Velociraptor-4B275F?&style=for-the-badge&logo=Velociraptor&logoColor=white" /></a>
+       </div>
+       <div class="tool-gauge" style="margin-top: 5px; margin-bottom: 10px;">
+         <div style="background: linear-gradient(to right, #ff0000, #ffff00, #00ff00); width: 100px; height: 10px; position: relative;">
+           <div style="position: absolute; left: 20%; width: 2px; height: 100%; background-color: white;"></div>
+         </div>
+       </div>
+    </div>
+  </div>
+
+  <div class="siem-section">
+    <h3 class="category-title">SIEM</h3>
+    <div class="category-content">
+       <div class="tool-link">
+         <a href="https://azure.microsoft.com/en-us/services/azure-sentinel/"><img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" /></a>
+       </div>
+       <div class="tool-gauge" style="margin-top: 5px; margin-bottom: 10px;">
+         <div style="background: linear-gradient(to right, #ff0000, #ffff00, #00ff00); width: 100px; height: 10px; position: relative;">
+           <div style="position: absolute; left: 50%; width: 2px; height: 100%; background-color: white;"></div>
+         </div>
+       </div>
+       <div class="tool-link">
+         <a href="https://www.splunk.com"><img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" /></a>
+       </div>
+       <div class="tool-gauge" style="margin-top: 5px; margin-bottom: 10px;">
+         <div style="background: linear-gradient(to right, #ff0000, #ffff00, #00ff00); width: 100px; height: 10px; position: relative;">
+           <div style="position: absolute; left: 70%; width: 2px; height: 100%; background-color: white;"></div>
+         </div>
+       </div>
+       <div class="tool-link">
+         <a href="https://www.elastic.co"><img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" /></a>
+       </div>
+       <div class="tool-gauge" style="margin-top: 5px; margin-bottom: 10px;">
+         <div style="background: linear-gradient(to right, #ff0000, #ffff00, #00ff00); width: 100px; height: 10px; position: relative;">
+           <div style="position: absolute; left: 20%; width: 2px; height: 100%; background-color: white;"></div>
+         </div>
+       </div>
+    </div>
+  </div>
+</div>
+
+## Certifications
+<div>
+<a href="https://coursera.org/share/bc6afea8abfe7bdd0f1dcda62a987cef"><img src="https://img.shields.io/badge/-Google_Security-FF0000?&style=for-the-badge&logo=Google&logoColor=white" /></a>
+<img src="https://img.shields.io/badge/-Security%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
+<img src="https://img.shields.io/badge/-Network%2B-007ACC?&style=for-the-badge&logo=CompTIA&logoColor=white" />
+<img src="https://img.shields.io/badge/-A%2B-4D4D4D?&style=for-the-badge&logo=CompTIA&logoColor=white" />
+<img src="https://img.shields.io/badge/-CDSA-006400?&style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/-CCD-000080?&style=for-the-badge&logoColor=white" />
+</div>
 
 ### Small image
 
