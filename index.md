@@ -19,17 +19,7 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
 
 <h2 style="text-align: center;">Projects</h2>
 
-
-<details>
-<summary>
-  <span class="projects-title" style="transition: font-size 0.3s ease;">Projects</span>
-</summary>
-
 <style>
-.projects-title:hover {
-  font-size: 150%;
-}
-
 .project-bubble {
   display: inline-flex;
   align-items: center;
@@ -135,8 +125,6 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
     </div>
   </div>
 </div>
-
-</details>
 
 #### Header 4
 
