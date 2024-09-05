@@ -2,20 +2,60 @@
 layout: default
 ---
 
+<style>
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  .dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .dark-mode-toggle:hover {
+    background-color: #36648B;
+  }
+  .dark-mode .project-bubble {
+    background-color: #36648B;
+  }
+  .dark-mode .associated-project a {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+</style>
 
+<button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+  }
+});
+</script>
 
 <a href="https://www.linkedin.com/in/breyon-bowman-729391237/" style="display: inline-block; background-color: #4682B4; color: white; text-decoration: none; padding: 10px 20px; border-radius: 25px; font-weight: bold;">LinkedIn Profile</a>
-
-
-
-
 
 # About me
 
 Experienced cybersecurity enthusiast with a strong foundation in network security, incident response, and vulnerability management whose journey in computer science has led me to develop a passion for cybersecurity, and I am now agar to start my professional cybersecurity career, specifically aiming to join pursue my long term goal to being a pen tester.
 
-
-<h2 style="text-align: center;">Projects</h2>
+<h2 style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Projects</h2>
 
 <style>
 .project-bubble {
@@ -214,6 +254,15 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
   text-align: left;
   margin-top: 20px;
 }
+
+.certification-link {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.certification-link:hover {
+  transform: scale(1.2);
+}
 </style>
 
 <script>
@@ -392,3 +441,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
