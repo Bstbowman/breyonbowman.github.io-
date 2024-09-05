@@ -140,7 +140,7 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
   </div>
 </div>
 
-<h2 style="text-align: center;">Skills and Tools</h2>
+<h2 style="text-align: center;">Skills, Tools, and Certifications</h2>
 
 <div style="text-align: center; margin: 20px 0;">
   <p>Proficiency indicator</p>
