@@ -6,11 +6,6 @@ layout: default
   body {
     background-color: #ffffff;
     color: #000000;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  body.dark-mode {
-    background-color: #1a1a1a;
-    color: #ffffff;
   }
   .project-bubble {
     background-color: #4682B4;
@@ -18,38 +13,12 @@ layout: default
   .associated-project a {
     background-color: rgba(255, 255, 255, 0.2);
   }
-  #dark-mode-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    background-color: #4682B4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-  }
 </style>
 
 <script
     type="module"
     src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"
 ></script>
-
-<button id="dark-mode-toggle">Toggle Dark Mode</button>
-
-<script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    const body = document.body;
-
-    darkModeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-    });
-  });
-</script>
 
 <a href="https://www.linkedin.com/in/breyon-bowman-729391237/" style="display: inline-block; background-color: #4682B4; color: white; text-decoration: none; padding: 10px 20px; border-radius: 25px; font-weight: bold;">LinkedIn Profile</a>
 
