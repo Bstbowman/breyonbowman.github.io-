@@ -31,14 +31,20 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
 }
 
 .project-bubble {
-  display: inline-block;
-  background-color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4682B4;  /* Changed to darkish sky blue */
   color: white;
   padding: 10px;
-  border-radius: 20px;
-  margin: 10px;  /* Increased from 5px to 10px */
+  border-radius: 50%;  /* Changed to 50% for circular shape */
+  width: 150px;  /* Added fixed width */
+  height: 150px;  /* Added fixed height */
+  margin: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-align: center;
+  overflow: hidden;
 }
 
 .project-bubble:hover {
@@ -70,7 +76,7 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;  /* Added gap property to increase spacing between bubbles */
+  gap: 20px;
 }
 
 .project-bubble:nth-child(odd) {
@@ -131,6 +137,7 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
 </div>
 
 </details>
+
 #### Header 4
 
 *   This is an unordered list following a header.
