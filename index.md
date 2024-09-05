@@ -4,50 +4,16 @@ layout: default
 
 <style>
   body {
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  body.dark-mode {
     background-color: #1a1a1a;
     color: #ffffff;
   }
-  .dark-mode-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    background-color: #4682B4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .dark-mode-toggle:hover {
+  .project-bubble {
     background-color: #36648B;
   }
-  .dark-mode .project-bubble {
-    background-color: #36648B;
-  }
-  .dark-mode .associated-project a {
+  .associated-project a {
     background-color: rgba(255, 255, 255, 0.2);
   }
 </style>
-
-<button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-<script>
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-}
-
-document.addEventListener('DOMContentLoaded', (event) => {
-  if (localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark-mode');
-  }
-});
-</script>
 
 <a href="https://www.linkedin.com/in/breyon-bowman-729391237/" style="display: inline-block; background-color: #4682B4; color: white; text-decoration: none; padding: 10px 20px; border-radius: 25px; font-weight: bold;">LinkedIn Profile</a>
 
@@ -438,6 +404,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
+```
+The final element.
+```
 ```
 The final element.
 ```
