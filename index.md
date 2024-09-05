@@ -24,7 +24,7 @@ layout: default
 
 # About me
 
-Experienced cybersecurity enthusiast with a strong foundation in network security, incident response, and vulnerability management whose journey in computer science has led me to develop a passion for cybersecurity, and I am now agar to start my professional cybersecurity career, specifically aiming to join pursue my long term goal to being a pen tester.
+Experienced cybersecurity enthusiast with a strong foundation in network security, incident response, and vulnerability management whose journey in computer science has led me to develop a passion for cybersecurity, and I am now eager to start my professional cybersecurity career, specifically aiming to join pursue my long term goal to being a pen tester.
 
 <h2 style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Projects</h2>
 
