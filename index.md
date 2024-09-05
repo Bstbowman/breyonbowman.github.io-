@@ -4,7 +4,7 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./https://www.linkedin.com/in/breyon-bowman-729391237/).
+<a href="https://www.linkedin.com/in/breyon-bowman-729391237/" style="display: inline-block; background-color: #4682B4; color: white; text-decoration: none; padding: 10px 20px; border-radius: 25px; font-weight: bold;">LinkedIn Profile</a>
 
 There should be whitespace between paragraphs.
 
