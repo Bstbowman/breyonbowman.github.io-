@@ -16,20 +16,18 @@ layout: default
   .slideshow-container {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-  }
-  .slideshow-content {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  .slideshow-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
   .close-slideshow {
     position: absolute;
@@ -45,28 +43,6 @@ layout: default
     type="module"
     src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"
 ></script>
-
-<script>
-  function showSlideshow() {
-    document.getElementById('slideshow').style.display = 'block';
-    loadRandomSlide();
-  }
-
-  function hideSlideshow() {
-    document.getElementById('slideshow').style.display = 'none';
-  }
-
-  function loadRandomSlide() {
-    const slides = [
-      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.p',
-      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_0',
-      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_5',
-      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_10'
-    ];
-    const randomSlide = slides[Math.floor(Math.random() * slides.length)];
-    document.getElementById('slideContent').src = randomSlide;
-  }
-</script>
 
 <a href="https://www.linkedin.com/in/breyon-bowman-729391237/" style="display: inline-block; background-color: #4682B4; color: white; text-decoration: none; padding: 10px 20px; border-radius: 25px; font-weight: bold;">LinkedIn Profile</a>
 
@@ -157,6 +133,28 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
   transform: perspective(1000px) rotateY(10deg) scale(1.1) translateY(0);
 }
 </style>
+
+<script>
+  function showSlideshow() {
+    document.getElementById('slideshow').style.display = 'block';
+    loadRandomSlide();
+  }
+
+  function hideSlideshow() {
+    document.getElementById('slideshow').style.display = 'none';
+  }
+
+  function loadRandomSlide() {
+    const slides = [
+      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.p',
+      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_0',
+      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_5',
+      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_10'
+    ];
+    const randomSlide = slides[Math.floor(Math.random() * slides.length)];
+    document.getElementById('slideContent').src = randomSlide;
+  }
+</script>
 
 <div class="project-container">
   <div class="project-bubble" onmouseover="showSlideshow()" onmouseout="hideSlideshow()">
