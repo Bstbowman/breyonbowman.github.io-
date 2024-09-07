@@ -13,6 +13,32 @@ layout: default
   .associated-project a {
     background-color: rgba(255, 255, 255, 0.2);
   }
+  .slideshow-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  .slideshow-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+  }
+  .close-slideshow {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
 </style>
 
 <script
@@ -20,11 +46,33 @@ layout: default
     src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"
 ></script>
 
+<script>
+  function showSlideshow() {
+    document.getElementById('slideshow').style.display = 'block';
+    loadRandomSlide();
+  }
+
+  function hideSlideshow() {
+    document.getElementById('slideshow').style.display = 'none';
+  }
+
+  function loadRandomSlide() {
+    const slides = [
+      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.p',
+      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_0',
+      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_5',
+      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_10'
+    ];
+    const randomSlide = slides[Math.floor(Math.random() * slides.length)];
+    document.getElementById('slideContent').src = randomSlide;
+  }
+</script>
+
 <a href="https://www.linkedin.com/in/breyon-bowman-729391237/" style="display: inline-block; background-color: #4682B4; color: white; text-decoration: none; padding: 10px 20px; border-radius: 25px; font-weight: bold;">LinkedIn Profile</a>
 
 # About me
 
-Accomplished cybersecurity enthusiast with a robust background in network security, incident response, and vulnerability management. My academic journey in computer science has cultivated a deep passion for cybersecurity. I am now poised to launch my professional career in this field, with a specific ambition to excel as a penetration tester.
+Experienced cybersecurity enthusiast with a strong foundation in network security, incident response, and vulnerability management whose journey in computer science has led me to develop a passion for cybersecurity, and I am now agar to start my professional cybersecurity career, specifically aiming to join pursue my long term goal to being a pen tester.
 
 <h2 style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Projects</h2>
 
@@ -33,23 +81,25 @@ Accomplished cybersecurity enthusiast with a robust background in network securi
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4682B4;  /* Changed to darkish sky blue */
+  background-color: #4682B4;
   color: white;
   padding: 10px;
-  border-radius: 50%;  /* Changed to 50% for circular shape */
-  width: 150px;  /* Added fixed width */
-  height: 150px;  /* Added fixed height */
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
   margin: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
   overflow: hidden;
   position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transform: perspective(1000px) rotateY(0deg);
 }
 
 .project-bubble:hover {
-  transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.5);  /* Changed to transparent black */
+  transform: perspective(1000px) rotateY(10deg) scale(1.1);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project-name {
@@ -92,23 +142,24 @@ Accomplished cybersecurity enthusiast with a robust background in network securi
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  perspective: 1000px;
 }
 
 .project-bubble:nth-child(odd) {
-  transform: translateY(-10px);
+  transform: perspective(1000px) rotateY(-5deg) translateY(-10px);
 }
 
 .project-bubble:nth-child(even) {
-  transform: translateY(10px);
+  transform: perspective(1000px) rotateY(5deg) translateY(10px);
 }
 
 .project-bubble:hover {
-  transform: scale(1.1) translateY(0);
+  transform: perspective(1000px) rotateY(10deg) scale(1.1) translateY(0);
 }
 </style>
 
 <div class="project-container">
-  <div class="project-bubble">
+  <div class="project-bubble" onmouseover="showSlideshow()" onmouseout="hideSlideshow()">
     <span class="project-name">Updating a File Using Python</span>
     <div class="associated-project">
       <a href="https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.p">Updating a File Using Python lab</a>
@@ -149,6 +200,13 @@ Accomplished cybersecurity enthusiast with a robust background in network securi
       <a href="https://docs.google.com/document/d/1yi9OqjPmkz0-nPTWne3W0Jqnzct7HHyOgSKWU_dvSyA/edit">Controls and compliance checklist lab</a>
     </div>
   </div>
+</div>
+
+<div id="slideshow" class="slideshow-container">
+  <div class="slideshow-content">
+    <iframe id="slideContent" width="100%" height="100%" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+  <span class="close-slideshow" onclick="hideSlideshow()">&times;</span>
 </div>
 
 <h2 style="text-align: center;">Skills, Tools, and Certifications</h2>
@@ -412,4 +470,3 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
-
