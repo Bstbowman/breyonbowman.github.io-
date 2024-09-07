@@ -456,9 +456,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 </dl>
 
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+def thank_you_message():
+    """
+    This function prints a thank you message for visiting the page.
+    It's a simple demonstration of function definition in Python.
+    """
+    print("Thank you for visiting my page!")
 ```
 
 ```
-The final element.
+Thank you for visiting my page!
+
 ```
