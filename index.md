@@ -135,18 +135,12 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
 </style>
 
 <script>
-  function showSlideshow() {
-    document.getElementById('slideshow').style.display = 'block';
-    loadRandomSlide();
-  }
-
   function hideSlideshow() {
     document.getElementById('slideshow').style.display = 'none';
   }
 
   function loadRandomSlide() {
     const slides = [
-      'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.p',
       'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_0',
       'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_5',
       'https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.g1e1e3a8c0d4_0_10'
@@ -157,7 +151,7 @@ Experienced cybersecurity enthusiast with a strong foundation in network securit
 </script>
 
 <div class="project-container">
-  <div class="project-bubble" onmouseover="showSlideshow()" onmouseout="hideSlideshow()">
+  <div class="project-bubble">
     <span class="project-name">Updating a File Using Python</span>
     <div class="associated-project">
       <a href="https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.p">Updating a File Using Python lab</a>
