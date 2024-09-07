@@ -446,14 +446,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 <dl>
 <dt>Name</dt>
-<dd>Godzilla</dd>
+<dd>Breyon</dd>
 <dt>Born</dt>
-<dd>1952</dd>
+<dd>Not born but created</dd>
 <dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+<dd>Test tube</dd>
+
 
 ```
 def thank_you_message():
