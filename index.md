@@ -455,10 +455,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 ```
 def thank_you_message():
-    """
-    This function prints a thank you message for visiting the page.
-    It's a simple demonstration of function definition in Python.
-    """
+
+
+   ** This function prints a thank you message for visiting the page.
+    It's a simple demonstration of function definition in Python.**
+
     print("Thank you for visiting my page!")
 ```
 
