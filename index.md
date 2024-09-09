@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-### Large image
+### Light shall come forth
 
 ![Branching](Screenshot 2023-12-02 205935.png)
 
