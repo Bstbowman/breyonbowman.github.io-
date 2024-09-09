@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 ### Small image
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![Octocat](read permissions.png)
 
 ### Light shall come forth
 
