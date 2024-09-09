@@ -439,7 +439,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![Branching](Screenshot 2023-12-02 205935.png)
 
 
 ### Definition lists can be used with HTML syntax.
