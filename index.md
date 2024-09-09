@@ -433,7 +433,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <span class="certification-link"><img src="https://img.shields.io/badge/-CCD-000080?&style=for-the-badge&logoColor=white" /></span>
 </div>
 
-![Octocat](Screenshot 2024-02-15 025725.png)
+![Octocat]()
 
 ### Light shall come forth
 
