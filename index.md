@@ -433,16 +433,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <span class="certification-link"><img src="https://img.shields.io/badge/-CCD-000080?&style=for-the-badge&logoColor=white" /></span>
 </div>
 
-### Small image
-
 ![Octocat](read permissions.png)
 
 ### Light shall come forth
 
 ![Branching](Screenshot 2023-12-02 205935.png)
-
-
-### Definition lists can be used with HTML syntax.
 
 <dl>
 <dt>Name</dt>
@@ -451,14 +446,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <dd>Not born but created</dd>
 <dt>Birthplace</dt>
 <dd>Test tube</dd>
+</dl>
 
-
-```
-def thank_you_message():
-print("Thank you for visiting my page!")
-```
-
-```
-Thank you for visiting my page!
-
-```
