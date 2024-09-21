@@ -111,6 +111,7 @@ I am an enthusiastic cybersecurity professional with a solid background in netwo
   padding: 5px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.5);
+  target: _blank; /* Added to open links in a new tab */
 }
 
 .project-container {
@@ -154,42 +155,42 @@ I am an enthusiastic cybersecurity professional with a solid background in netwo
   <div class="project-bubble">
     <span class="project-name">Updating a File Using Python</span>
     <div class="associated-project">
-      <a href="https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.p">Updating a File Using Python lab</a>
+      <a href="https://docs.google.com/presentation/d/104vj63hCLHkrugQQTfK1Dd7oiMhas2HH2_lNUsSmCNk/edit#slide=id.p" target="_blank">Updating a File Using Python lab</a>
     </div>
   </div>
 
   <div class="project-bubble">
     <span class="project-name">Document an incident with an incident handler's journal</span>
     <div class="associated-project">
-      <a href="https://docs.google.com/document/d/1zzNWQI49lH9ITrDKudjlw4stTf1I7yuZCtP2FJTDzK0/edit?resourcekey=0-zsGjrRjrrO7KNZuAUyZMOg">Incident handler's journal example</a>
+      <a href="https://docs.google.com/document/d/1zzNWQI49lH9ITrDKudjlw4stTf1I7yuZCtP2FJTDzK0/edit?resourcekey=0-zsGjrRjrrO7KNZuAUyZMOg" target="_blank">Incident handler's journal example</a>
     </div>
   </div>
 
   <div class="project-bubble">
     <span class="project-name">Vulnerability assessment report</span>
     <div class="associated-project">
-      <a href="https://docs.google.com/document/d/1AsN7zZNlcRHzRmOQk43vi8Z-uJ_TSroLbJ_ci9qFQIo/edit?resourcekey=0-wFIjLbfogxxC3RqkiK02Wg">Vulnerability assessment report lab</a>
+      <a href="https://docs.google.com/document/d/1AsN7zZNlcRHzRmOQk43vi8Z-uJ_TSroLbJ_ci9qFQIo/edit?resourcekey=0-wFIjLbfogxxC3RqkiK02Wg" target="_blank">Vulnerability assessment report lab</a>
     </div>
   </div>
 
   <div class="project-bubble">
     <span class="project-name">Incident response execution</span>
     <div class="associated-project">
-      <a href="https://docs.google.com/presentation/d/1BoN-haIWpvA5R5iYkNsq2a7nGKuK5lOv4adJcEHwMEE/edit#slide=id.g279c45888cd_0_36">Use the NIST Cybersecurity Framework to respond to a security incident lab</a>
+      <a href="https://docs.google.com/presentation/d/1BoN-haIWpvA5R5iYkNsq2a7nGKuK5lOv4adJcEHwMEE/edit#slide=id.g279c45888cd_0_36" target="_blank">Use the NIST Cybersecurity Framework to respond to a security incident lab</a>
     </div>
   </div>
 
   <div class="project-bubble">
     <span class="project-name">Use Linux commands to manage file permissions</span>
     <div class="associated-project">
-      <a href="https://docs.google.com/document/d/1BCXBdrraCHh7w3FrnfMvs-FiOzDjWzsWIlFiUcTBME8/edit?resourcekey=0--jfRjUAXgWP7VlQLR32liw">File permissions in Linux lab</a>
+      <a href="https://docs.google.com/document/d/1BCXBdrraCHh7w3FrnfMvs-FiOzDjWzsWIlFiUcTBME8/edit?resourcekey=0--jfRjUAXgWP7VlQLR32liw" target="_blank">File permissions in Linux lab</a>
     </div>
   </div>
 
   <div class="project-bubble">
     <span class="project-name">Conduct a security audit</span>
     <div class="associated-project">
-      <a href="https://docs.google.com/document/d/1yi9OqjPmkz0-nPTWne3W0Jqnzct7HHyOgSKWU_dvSyA/edit">Controls and compliance checklist lab</a>
+      <a href="https://docs.google.com/document/d/1yi9OqjPmkz0-nPTWne3W0Jqnzct7HHyOgSKWU_dvSyA/edit" target="_blank">Controls and compliance checklist lab</a>
     </div>
   </div>
 </div>
