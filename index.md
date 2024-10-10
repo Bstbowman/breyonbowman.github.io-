@@ -446,6 +446,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <dt>Born</dt>
 <dd>Not born but created</dd>
 <dt>Birthplace</dt>
-<dd>Test tube</dd>
+<dd>Earth</dd>
 </dl>
 
